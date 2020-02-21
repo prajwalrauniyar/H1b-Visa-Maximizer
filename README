@@ -1,0 +1,39 @@
+Environment
+-----------
+The code has been run and tested on Python 3.7.0
+The code assumes a Python environment of 3.7.0 or more. The necessary packages/modules that should be installed before running are
+-	numpy
+-	pandas
+-	sklearn.cluster.KMeans
+-	matplotlib.pyplot
+-	os
+-	pickle
+
+
+
+Data Files
+----------
+The data files for the years 2009 through 2019 should already be downloaded on the local machine in a directory path that has can be accessed by the user.
+The source location of the data path is at the location given in the “Data” section of this document.
+( Original Source -- https://www.uscis.gov/tools/reports-studies/h-1b-employer-data-hub-files )
+
+The user is expected to set the directory path to the data files in the variable “dir_path”
+
+NOTE: The user may not change the names of the file for the script to work correctly. If changed then the user must change the script (like changing the “prefix” variable so that iteration of names can be done)
+
+
+
+Running the Script
+------------------
+To run the script we can simply run as one would run a python script. 
+E.g. :  python RunnerADM.py
+
+All the variables that have been created can be saved on the local disk using pickle 
+To Dump a variable into a file, on the script run
+
+with open(<filename>, ‘wb’) as fd:
+	pickle.dump(<VariableToBeSaved> , fd)
+
+To retrieve a variable that had been saved by the pickle on local disk run
+with open(<filename>, ‘rb’) as fd:
+	myVariable = pickle.load(fd)
