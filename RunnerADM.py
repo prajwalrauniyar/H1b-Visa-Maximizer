@@ -12,7 +12,7 @@ first_year = 2009
 num_years = 11
 num_features = 5 
 
-dir_path = '/Users/prajwalrauniyar/Academics/Analatical_Data_Mining/Project'
+dir_path = 'to/some/dir'
 
 init_read_pd = []
 for i in range(first_year, first_year+num_years):
